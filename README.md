@@ -4,7 +4,7 @@
 - Môn: IE402.P21 - Thông Tin Địa Lý 3 Chiều  
 - Nhóm thực hiện: **`Nhóm 07`**
 
-## Cây thư mục:
+## Cây thư mục
 
 - **images**: thư mục ảnh, chủ yếu chứa icon cho các loại điểm trên bản đồ (thị xã, thành phố, cầu)
 - **point**: chứa dữ liệu JSON các điểm
@@ -23,16 +23,16 @@
 - **styles.css**: CSS tạo kiểu webpage
 - **script.js**: file JavaScript chính, tương tác với **ESRI ArcGIS JavaScript API**
 
-## Cách thêm dữ liệu:
+## Cách thêm dữ liệu
 
 - **Với các điểm**: Thêm trực tiếp vào các file **`bridges.json, cities.json, towns.json`**
 - **Với các đa giác, cung**: Tạo file JSON mới, thêm dữ liệu vào, sau đó điền tên file mới tạo vào **`index.json`**
 
-## Deploy:
+## Deploy
 
 Có thể deploy cục bộ trên máy cá nhân, **chạy trực tiếp từ file `index.html`** hay dùng extension **Live Server trong VS Code**
 
-## Screenshot:
+## Screenshot
 
 - **_View 2D mặc định_**
 
