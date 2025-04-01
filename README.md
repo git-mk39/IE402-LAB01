@@ -14,6 +14,7 @@ LAB01 402.P21 Thông Tin Địa Lý 3 Chiều - NHÓM 07
     + roads: thư mục cung đường bộ
       * ql61.json, ql61b.json,... <ten_duong>.json: dữ liệu (tập hợp các điểm tạo nên cung) của mỗi đường
       * _index.json_: file index chứa tên của các file JSON đường để nạp vào script.js
+  - **screenshots**: ảnh chụp màn hình demo
   - **index.html**: HTML chính
   - **styles.css**: CSS
   - **script.js**: JavaScript, file tương tác chính tới ESRI ArcGIS JavaScript API
@@ -24,3 +25,6 @@ LAB01 402.P21 Thông Tin Địa Lý 3 Chiều - NHÓM 07
 
 ## Deploy:
 Có thể deploy cục bộ trên máy cá nhân, chạy trực tiếp từ file index.html hay dùng extension Live Server từ VS Code IDE
+
+## Screenshot:
+![View 2D mặc định](/screenshots/2d_view.png "San Juan Mountains")
