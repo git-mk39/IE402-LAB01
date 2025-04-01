@@ -1,7 +1,7 @@
 # IE402-LAB01
 
-- Bài thực hành LAB01  
-- Môn: IE402.P21 - Thông Tin Địa Lý 3 Chiều  
+- Bài thực hành LAB01
+- Môn: IE402.P21 - Thông Tin Địa Lý 3 Chiều
 - Nhóm thực hiện: **`Nhóm 07`**
 
 ## Cây thư mục
@@ -50,7 +50,7 @@ Có thể deploy cục bộ trên máy cá nhân, **chạy trực tiếp từ fi
 
 - **_Thông tin hiển thị khi chọn vào_**
 
-  ![Thông tin hiển thị khi chọn vào](/screenshots/popup_info.png "View 2D màu đơn giản")
+  ![Thông tin hiển thị khi chọn vào](/screenshots/popup_info.png "Thông tin hiển thị khi chọn vào")
   &nbsp;
   &nbsp;
   &nbsp;
