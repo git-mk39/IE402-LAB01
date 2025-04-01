@@ -18,8 +18,8 @@ LAB01 402.P21 Thông Tin Địa Lý 3 Chiều - NHÓM 07
     - **_`index.json`_**: file index chứa tên của các file JSON đường để nạp vào script.js
 - **screenshots**: ảnh chụp màn hình demo
 - **index.html**: HTML chính
-- **styles.css**: CSS
-- **script.js**: JavaScript, file tương tác chính tới ESRI ArcGIS JavaScript API
+- **styles.css**: CSS tạo kiểu webpage
+- **script.js**: file JavaScript chính, tương tác với **ESRI ArcGIS JavaScript API**
 
 ## Cách thêm dữ liệu:
 
