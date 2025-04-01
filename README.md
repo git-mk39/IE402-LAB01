@@ -50,7 +50,7 @@ Có thể deploy cục bộ trên máy cá nhân, **chạy trực tiếp từ fi
 
 - **_Thông tin hiển thị khi chọn vào_**
 
-  ![Thông tin hiển thị khi chọn vào](/screenshots/popup_info.png "Thông tin hiển thị khi chọn vào")
+  ![Thông tin hiển thị khi chọn vào](/screenshots/popup_desc.png "Thông tin hiển thị khi chọn vào")
   &nbsp;
   &nbsp;
   &nbsp;
