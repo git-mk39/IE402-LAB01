@@ -1,6 +1,8 @@
 # IE402-LAB01
 
-LAB01 402.P21 Thông Tin Địa Lý 3 Chiều - NHÓM 07
+Bài thực hành LAB01  
+Môn: IE402.P21 - Thông Tin Địa Lý 3 Chiều  
+Nhóm thực hiện: Nhóm 07
 
 ## Cây thư mục:
 
