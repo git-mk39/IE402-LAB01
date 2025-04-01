@@ -35,15 +35,21 @@ Có thể deploy cục bộ trên máy cá nhân, chạy trực tiếp từ file
 - **_View 2D mặc định_**
 
   ![View 2D mặc định](/screenshots/2d_view.png "View 2D mặc định")
-
+   
+   
+   
 - **_View 2D màu đơn giản_**
 
   ![View 2D màu đơn giản](/screenshots/2d_view_simple_color.png "View 2D màu đơn giản")
-
+      
+   
+   
 - **_View 2D với basemap khác_**
 
   ![View 2D với basemap khác](/screenshots/2d_view_different_basemap.png "View 2D với basemap khác")
-
+   
+   
+   
 - **_View 3D_**
 
   ![View 3D](/screenshots/3d_view.png "View 3D")
