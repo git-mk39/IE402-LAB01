@@ -48,16 +48,16 @@ Có thể deploy cục bộ trên máy cá nhân, **chạy trực tiếp từ fi
   &nbsp;
   &nbsp;
 
-- **_Thông tin hiển thị khi chọn vào_**
-
-  ![Thông tin hiển thị khi chọn vào](/screenshots/popup_desc.png "Thông tin hiển thị khi chọn vào")
-  &nbsp;
-  &nbsp;
-  &nbsp;
-
 - **_View 2D với basemap khác_**
 
   ![View 2D với basemap khác](/screenshots/2d_view_different_basemap.png "View 2D với basemap khác")
+  &nbsp;
+  &nbsp;
+  &nbsp;
+
+- **_Thông tin hiển thị khi chọn vào_**
+
+  ![Thông tin hiển thị khi chọn vào](/screenshots/popup_desc.png "Thông tin hiển thị khi chọn vào")
   &nbsp;
   &nbsp;
   &nbsp;
