@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle 2D/3D View - ArcGIS</title>
+    <script src="https://js.arcgis.com/4.28/"></script>
+    <style>
+      html,
+      body,
+      #viewDiv {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Toggle Button */
+      #toggleBtn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 15px;
+        background: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+      }
+
+      #toggleBtn:hover {
+        background: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Map Container -->
+    <div id="viewDiv"></div>
+
+    <!-- Toggle Button -->
+    <button id="toggleBtn">Switch to 3D</button>
+
+    <script>
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/views/SceneView",
+      ], function (Map, MapView, SceneView) {
+        // Create a shared Map object
+        const map = new Map({
+          basemap: "streets-navigation-vector",
+        });
+
+        // Initialize 2D MapView
+        let mapView = new MapView({
+          container: "viewDiv",
+          map: map,
+          center: [-100, 40], // Longitude, Latitude
+          zoom: 4,
+        });
+
+        // Initialize 3D SceneView
+        let sceneView = new SceneView({
+          container: null, // Will be assigned later
+          map: map,
+          viewingMode: "global",
+          camera: {
+            position: { longitude: -100, latitude: 40, z: 5000000 },
+            tilt: 30,
+          },
+        });
+
+        // Toggle Button Event
+        document
+          .getElementById("toggleBtn")
+          .addEventListener("click", function () {
+            if (mapView.container) {
+              // Switch to 3D
+              mapView.container = null; // Detach 2D view
+              sceneView.container = "viewDiv"; // Attach 3D view
+              this.innerText = "Switch to 2D";
+            } else {
+              // Switch to 2D
+              sceneView.container = null;
+              mapView.container = "viewDiv";
+              this.innerText = "Switch to 3D";
+            }
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Thành phố Bạc Liêu",
+    "longitude": 105.72504496707545,
+    "latitude": 9.28256121704648,
+    "population": "155.874"
+  },
+  {
+    "title": "Thành phố Cần Thơ",
+    "city_type": "Trực thuộc trung ương",
+    "longitude": 105.7806542,
+    "latitude": 10.0326291,
+    "population": "1.252.348"
+  },
+  {
+    "title": "Thành phố Vĩnh Long",
+    "longitude": 105.9718501,
+    "latitude": 10.2562605,
+    "population": "138.981"
+  },
+  {
+    "title": "Thành phố Rạch Giá",
+    "longitude": 105.0812428,
+    "latitude": 10.0178043,
+    "population": "259.860"
+  },
+  {
+    "title": "Thành phố Hồ Chí Minh",
+    "city_type": "Trực thuộc trung ương",
+    "longitude": 106.6956702,
+    "latitude": 10.7791358,
+    "population": "8.9 Triệu"
+  },
+  {
+    "title": "Thành phố Vũng Tàu",
+    "longitude": 107.0825533,
+    "latitude": 10.356758,
+    "population": "464.860"
+  },
+  {
+    "title": "Thành phố Thủ Đức",
+    "longitude": 106.7797199,
+    "latitude": 10.862073,
+    "population": "1.2 Triệu"
+  }
+]
