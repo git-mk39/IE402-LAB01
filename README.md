@@ -27,4 +27,7 @@ LAB01 402.P21 Thông Tin Địa Lý 3 Chiều - NHÓM 07
 Có thể deploy cục bộ trên máy cá nhân, chạy trực tiếp từ file index.html hay dùng extension Live Server từ VS Code IDE
 
 ## Screenshot:
-![View 2D mặc định](/screenshots/2d_view.png "San Juan Mountains")
+![View 2D mặc định](/screenshots/2d_view.png "View 2D mặc định")
+![View 2D màu đơn giản](/screenshots/2d_view_simple_color.png "View 2D màu đơn giản")
+![View 2D với basemap khác](/screenshots/2d_view_different_basemap.png "View 2D với basemap khác")
+![View 3D](/screenshots/3d_view.png "View 3D")
