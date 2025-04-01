@@ -26,7 +26,7 @@
 ## Cách thêm dữ liệu
 
 - **Với các điểm**: Thêm trực tiếp vào các file **`bridges.json, cities.json, towns.json`**
-- **Với các đa giác, cung**: Tạo file JSON mới, thêm dữ liệu vào, sau đó điền tên file mới tạo vào **`index.json`**
+- **Với các đa giác, cung**: Tạo file JSON mới, thêm dữ liệu vào, sau đó điền tên file mới tạo vào **_`index.json`_**
 
 ## Deploy
 
