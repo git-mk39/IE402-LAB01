@@ -162,6 +162,9 @@ require([
     });
   };
 
+  // đặt khu vực mặc định
+  const defaultRegion = "Cả nước";
+
   // lấy dữ liệu tọa độ các tỉnh từ ./polygon/provinces/index.json
   function fetchProvinceData(byRegion) {
     fetch("polygon/provinces/index.json")
@@ -178,8 +181,8 @@ require([
       );
   }
 
-  // fetch data tỉnh lần đầu với hiển thị màu toàn bộ các tỉnh toàn quốc
-  fetchProvinceData("Cả nước");
+  // fetch data tỉnh lần đầu
+  fetchProvinceData(defaultRegion);
 
   // hàm đổi khu vực hiển thị các thông tin địa lý
   window.changeDisplayRegion = function (byRegion) {
@@ -188,7 +191,7 @@ require([
   };
 
   // lấy dữ liệu các đường đi từ ./polygon/roads/index.json
-  function fetchRoadData(useDataColors) {
+  function fetchRoadData(useDataColors, byRegion) {
     fetch("polygon/roads/index.json")
       .then((res) => res.json())
       .then((files) =>
