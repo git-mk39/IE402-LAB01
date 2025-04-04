@@ -36,32 +36,32 @@ Có thể deploy cục bộ trên máy cá nhân, **chạy trực tiếp từ fi
 
 - **_View 2D mặc định_**
 
-  ![View 2D mặc định](/screenshots/2d_view.png "View 2D mặc định")
+  ![View 2D mặc định](/screenshots/default-2d-view.png "View 2D mặc định")
   &nbsp;
   &nbsp;
   &nbsp;
 
-- **_View 2D màu đơn giản_**
+- **_Hiển thị thông tin địa lý cho một khu vực nhất định_**
 
-  ![View 2D màu đơn giản](/screenshots/2d_view_simple_color.png "View 2D màu đơn giản")
+  ![Hiển thị thông tin địa lý cho một khu vực nhất định](/screenshots/region-view.png "Hiển thị thông tin địa lý cho một khu vực nhất định")
   &nbsp;
   &nbsp;
   &nbsp;
 
 - **_View 2D với basemap khác_**
 
-  ![View 2D với basemap khác](/screenshots/2d_view_different_basemap.png "View 2D với basemap khác")
+  ![View 2D với basemap khác](/screenshots/change-basemap.png "View 2D với basemap khác")
   &nbsp;
   &nbsp;
   &nbsp;
 
 - **_Thông tin hiển thị khi chọn vào_**
 
-  ![Thông tin hiển thị khi chọn vào](/screenshots/popup_desc.png "Thông tin hiển thị khi chọn vào")
+  ![Thông tin hiển thị khi chọn vào](/screenshots/popup-info.png "Thông tin hiển thị khi chọn vào")
   &nbsp;
   &nbsp;
   &nbsp;
 
 - **_View 3D_**
 
-  ![View 3D](/screenshots/3d_view.png "View 3D")
+  ![View 3D](/screenshots/3d-view.png "View 3D")
