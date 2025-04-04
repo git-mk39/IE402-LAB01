@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Hậu Giang",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "1.608",
   "population": "974.126",
+  "population_density": 452,
+  "plate_number": 95,
   "color": [120, 190, 255, 0.6],
   "rings": [
     [105.57909694300004, 9.985845098000111],

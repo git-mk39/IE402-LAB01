@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Long An",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "4.492",
   "population": "2.003.000",
+  "population_density": 376,
+  "plate_number": 62,
   "color": [203, 255, 101, 0.6],
   "rings": [
     [105.81728305400003, 10.960274538000101],

@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Vĩnh Long",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "1.475",
   "population": "1.142.000",
+  "population_density": 693,
+  "plate_number": 64,
   "color": [255, 101, 101, 0.6],
   "rings": [
     [106.02713459700004, 10.286297203000048],

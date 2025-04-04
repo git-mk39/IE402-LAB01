@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Tiền Giang",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "2.510",
   "population": "1.764.000",
+  "population_density": 703,
+  "plate_number": 63,
   "color": [255, 101, 205, 0.6],
   "rings": [
     [106.284967667, 10.588056122000109],

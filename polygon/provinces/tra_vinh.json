@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Trà Vinh",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "2.390,8",
   "population": "1.009.940",
+  "population_density": 428,
+  "plate_number": 84,
   "color": [177, 101, 255, 0.6],
   "rings": [
     [106.33031001700007, 10.011512098000084],

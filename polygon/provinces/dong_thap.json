@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Đồng Tháp",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "3.238",
   "population": "1.600.000",
+  "population_density": 473,
+  "plate_number": 66,
   "color": [113, 255, 218, 0.8],
   "rings": [
     [105.44962844, 10.955906315000073],

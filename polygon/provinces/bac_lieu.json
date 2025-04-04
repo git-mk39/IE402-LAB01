@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Bạc Liêu",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "2.526",
   "population": "978.695",
+  "population_density": 340,
+  "plate_number": 94,
   "color": [255, 97, 180, 0.6],
   "rings": [
     [105.32590852100006, 9.600039486000076],

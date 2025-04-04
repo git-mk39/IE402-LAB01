@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Bến Tre",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "2.322",
   "population": "1.624.000",
+  "population_density": 538,
+  "plate_number": 71,
   "color": [101, 255, 120, 0.6],
   "rings": [
     [106.42507837400005, 10.320189322000049],

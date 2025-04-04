@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh An Giang",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "3.537",
   "population": "2.413.000",
+  "population_density": 540,
+  "plate_number": 67,
   "color": [255, 97, 97, 0.8],
   "rings": [
     [105.11524187400002, 10.955660896000017],

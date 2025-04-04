@@ -6,6 +6,7 @@
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
     <title>LAB01 IE402.P21 NHÓM 07</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://js.arcgis.com/4.28/esri/themes/dark/main.css"
@@ -18,19 +19,26 @@
     <script src="https://js.arcgis.com/4.28/"></script>
     <script src="script.js"></script>
 
-    
     <div id="toggleContainer">
       <button id="toggleBtn">Đổi sang 3D</button>
-      <label>
-        <input type="checkbox" id="toggleProvinceColor" checked /><span
-          >Hiển thị màu cho mỗi tỉnh</span
-        ></label
-      >
       <label>
         <input type="checkbox" id="toggleRoadColor" checked /><span
           >Hiển thị màu cho mỗi đường bộ</span
         ></label
       >
+      <span>Hiển thị thông tin địa lý cho khu vực: </span>
+      <select onchange="changeDisplayRegion(this.value)">
+        <option value="Cả nước">Cả nước</option>
+        <option value="Đông Bắc Bộ">Đông Bắc Bộ</option>
+        <option value="Tây Bắc Bộ">Tây Bắc Bộ</option>
+        <option value="Đồng bằng sông Hồng">Đồng bằng sông Hồng</option>
+        <option value="Bắc Trung Bộ">Bắc Trung Bộ</option>
+        <option value="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</option>
+        <option value="Tây Nguyên">Tây Nguyên</option>
+        <option value="Đông Nam Bộ">Đông Nam Bộ</option>
+        <option value="Đồng bằng sông Cửu Long">Đồng bằng sông Cửu Long</option>
+        <option value="Không khu vực nào">Không khu vực nào</option>
+      </select>
     </div>
 
     <div id="basemapSelect">
@@ -53,7 +61,7 @@
     <div id="map-description">
       <h2>Chú thích</h2>
       <p>
-        <img src="images/town.png" alt="biểu tượng thị xã">
+        <img src="images/town.png" alt="biểu tượng thị xã" />
         <span>Thị xã</span>
       </p>
       <p>

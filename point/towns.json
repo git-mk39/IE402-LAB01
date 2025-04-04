@@ -2,56 +2,67 @@
   {
     "title": "Thị xã Bình Minh",
     "longitude": 105.8230184,
-    "latitude": 10.0703908
+    "latitude": 10.0703908,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Bến Cát",
     "longitude": 106.5941845,
-    "latitude": 11.1513519
+    "latitude": 11.1513519,
+    "region": "Đông Nam Bộ"
   },
   {
     "title": "Thị xã Ngã Bảy",
     "longitude": 105.8187119,
-    "latitude": 9.8128319
+    "latitude": 9.8128319,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Kiến Tường",
     "longitude": 105.9368799,
-    "latitude": 10.7769348
+    "latitude": 10.7769348,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Gò Công",
     "longitude": 106.6722978,
-    "latitude": 10.3605666
+    "latitude": 10.3605666,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Vị Thanh",
     "longitude": 105.4603114,
-    "latitude": 9.7765592
+    "latitude": 9.7765592,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Duyên Hải",
     "longitude": 106.4995288,
-    "latitude": 9.6427282
+    "latitude": 9.6427282,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Cái Nước",
     "longitude": 105.0137541,
-    "latitude": 8.9425314
+    "latitude": 8.9425314,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Gò Quao",
     "longitude": 105.27767,
-    "latitude": 9.7277973
+    "latitude": 9.7277973,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Tân Châu",
     "longitude": 105.2459135,
-    "latitude": 10.7988056
+    "latitude": 10.7988056,
+    "region": "Đồng bằng sông Cửu Long"
   },
   {
     "title": "Thị xã Sa Đéc",
     "longitude": 105.7670588,
-    "latitude": 10.2881861
+    "latitude": 10.2881861,
+    "region": "Đồng bằng sông Cửu Long"
   }
 ]

@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Cần Thơ",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "1.439",
   "population": "1.282.000",
+  "population_density": 858,
+  "plate_number": 65,
   "color": [97, 105, 255, 0.6],
   "rings": [
     [105.59810952400009, 10.239508555000041],

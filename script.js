@@ -16,7 +16,7 @@ require([
     tilt: 55,
   };
 
-  // hiển thị view 2D
+  // hiển thị view 3D
   const sceneView = new SceneView({
     container: null,
     map: map,
@@ -24,12 +24,12 @@ require([
     camera: cameraPosition,
   });
 
-  // hiển thị view 3D
+  // hiển thị view 2D
   const mapView = new MapView({
     container: "viewDiv",
     map: map,
-    zoom: 7,
-    center: [105.5474137, 9.9241589],
+    zoom: 5,
+    center: [108.6208828, 15.6862363],
   });
 
   // xử lý event khi chuyển đổi 2D <-> 3D
@@ -62,12 +62,18 @@ require([
   const pointsLayer = new GraphicsLayer();
 
   // vẽ đa giác tỉnh
-  const drawProvince = (data, useDataColors) => {
+  const drawProvince = (data, byRegion) => {
+    var useColor;
+    if (data.region === byRegion || byRegion === "Cả nước") {
+      useColor = data.color;
+    } else {
+      useColor = [120, 120, 120, 0.5];
+    }
     return new Graphic({
       geometry: { type: "polygon", rings: data.rings },
       symbol: {
         type: "simple-fill",
-        color: useDataColors ? data.color : [120, 120, 120, 0.5],
+        color: useColor,
         outline: {
           type: "simple-line",
           color: [255, 255, 255], // màu biên giới tỉnh
@@ -78,13 +84,14 @@ require([
       attributes: data,
       popupTemplate: {
         title: "{title}",
-        content: "<a>Diện tích: {area} Km²<br>Dân số: {population} người</a>",
+        content:
+          "<a>Diện tích: {area} km²<br>Dân số: {population} người <br>Mật độ: {population_density} người/km²<br>Biển số xe: {plate_number}</a>",
       },
     });
   };
 
   // vẽ cung đường đi
-  const drawRoad = (data, useDataColors) => {
+  const drawRoad = (data, useDataColors, byRegion) => {
     return new Graphic({
       symbol: {
         type: "simple-line",
@@ -156,7 +163,7 @@ require([
   };
 
   // lấy dữ liệu tọa độ các tỉnh từ ./polygon/provinces/index.json
-  function fetchProvinceData(useDataColors) {
+  function fetchProvinceData(byRegion) {
     fetch("polygon/provinces/index.json")
       .then((res) => res.json())
       .then((files) =>
@@ -167,22 +174,25 @@ require([
         )
       )
       .then((data) =>
-        data.forEach((obj) =>
-          polygonsLayer.add(drawProvince(obj, useDataColors))
-        )
+        data.forEach((obj) => polygonsLayer.add(drawProvince(obj, byRegion)))
       );
   }
 
   // fetch data tỉnh lần đầu
-  fetchProvinceData(true); // thay đổi mặc định true: màu cho tỉnh khi mới tải trang, false: không màu khi mới tải
+  fetchProvinceData("Cả nước"); // thay đổi mặc định true: màu cho tỉnh khi mới tải trang, false: không màu khi mới tải
+
+  window.changeDisplayRegion = function (byRegion) {
+    polygonsLayer.removeAll();
+    fetchProvinceData(byRegion);
+  };
 
   // thực thi khi tick chọn hiển thị màu cho tỉnh
-  document
-    .getElementById("toggleProvinceColor")
-    .addEventListener("change", function () {
-      polygonsLayer.removeAll(); // xóa graphics để vẽ lại
-      fetchProvinceData(this.checked);
-    });
+  // document
+  //   .getElementById("toggleProvinceColor")
+  //   .addEventListener("change", function () {
+  //     polygonsLayer.removeAll(); // xóa graphics để vẽ lại
+  //     fetchProvinceData(this.checked);
+  //   });
 
   // lấy dữ liệu các đường đi từ ./polygon/roads/index.json
   function fetchRoadData(useDataColors) {
@@ -203,7 +213,7 @@ require([
   // fetch data đường bộ lần đầu
   fetchRoadData(true);
 
-  // thực thi khi tick chọn hiển thị màu cho tỉnh
+  // thực thi khi tick chọn hiển thị màu cho đường
   document
     .getElementById("toggleRoadColor")
     .addEventListener("change", function () {

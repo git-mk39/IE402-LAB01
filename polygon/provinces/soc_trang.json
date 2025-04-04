@@ -1,7 +1,10 @@
 {
   "title": "Tỉnh Sóc Trăng",
+  "region": "Đồng bằng sông Cửu Long",
   "area": "3.233",
   "population": "1.621.000",
+  "population_density": 362,
+  "plate_number": 83,
   "color": [213, 255, 0, 0.6],
   "rings": [
     [105.90627204000002, 9.932544093000038],
