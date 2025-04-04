@@ -63,7 +63,7 @@ require([
 
   // vẽ đa giác tỉnh
   const drawProvince = (data, byRegion) => {
-    var useColor;
+    let useColor;
     if (data.region === byRegion || byRegion === "Cả nước") {
       useColor = data.color;
     } else {
@@ -106,7 +106,7 @@ require([
 
   // vẽ điểm thành phố
   const drawCity = (data) => {
-    var img_url = "images/city.png";
+    let img_url = "images/city.png";
     if (data.city_type === "Trực thuộc trung ương") {
       img_url = "images/major_city.png";
     }
@@ -178,21 +178,14 @@ require([
       );
   }
 
-  // fetch data tỉnh lần đầu
-  fetchProvinceData("Cả nước"); // thay đổi mặc định true: màu cho tỉnh khi mới tải trang, false: không màu khi mới tải
+  // fetch data tỉnh lần đầu với hiển thị màu toàn bộ các tỉnh toàn quốc
+  fetchProvinceData("Cả nước");
 
+  // hàm đổi khu vực hiển thị các thông tin địa lý
   window.changeDisplayRegion = function (byRegion) {
     polygonsLayer.removeAll();
     fetchProvinceData(byRegion);
   };
-
-  // thực thi khi tick chọn hiển thị màu cho tỉnh
-  // document
-  //   .getElementById("toggleProvinceColor")
-  //   .addEventListener("change", function () {
-  //     polygonsLayer.removeAll(); // xóa graphics để vẽ lại
-  //     fetchProvinceData(this.checked);
-  //   });
 
   // lấy dữ liệu các đường đi từ ./polygon/roads/index.json
   function fetchRoadData(useDataColors) {
@@ -210,8 +203,12 @@ require([
       );
   }
 
+  // flag có dùng màu riêng cho từng đường bộ hay là không
+  // mặc định = true (có)
+  let useRoadColor = true;
+
   // fetch data đường bộ lần đầu
-  fetchRoadData(true);
+  fetchRoadData(useRoadColor);
 
   // thực thi khi tick chọn hiển thị màu cho đường
   document
@@ -219,6 +216,7 @@ require([
     .addEventListener("change", function () {
       arcsLayer.removeAll(); // xóa graphics để vẽ lại
       fetchRoadData(this.checked);
+      useRoadColor = this.checked;
     });
 
   // lấy dữ liệu các điểm cầu đường bộ từ ./point/bridges.json
