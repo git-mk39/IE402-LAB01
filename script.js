@@ -245,7 +245,7 @@ require([
   document
     .getElementById("toggleRoadColor")
     .addEventListener("change", function () {
-      arcsLayer.removeAll(); // xóa graphics để vẽ lại
+      arcsLayer.removeAll(); // xóa lớp cung đường bộ để vẽ lại
       fetchRoadData(this.checked, region);
       useRoadColor = this.checked;
     });
@@ -285,7 +285,7 @@ require([
     }
   });
 
-  // đổi basemap qua danh sách
+  // đổi basemap
   window.changeBasemap = function (basemap) {
     map.basemap = basemap;
   };
