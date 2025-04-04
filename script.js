@@ -35,31 +35,41 @@ require([
 
   // vẽ đa giác tỉnh
   const drawProvince = (data, currentRegion) => {
-    let useColor;
     if (data.region === currentRegion || currentRegion === "Cả nước") {
-      useColor = data.color;
-    } else {
-      useColor = [120, 120, 120, 0.5];
-    }
-    return new Graphic({
-      geometry: { type: "polygon", rings: data.rings },
-      symbol: {
-        type: "simple-fill",
-        color: useColor,
-        outline: {
-          type: "simple-line",
-          color: [255, 255, 255], // màu biên giới tỉnh
-          width: 1, // độ dày biên giới
-          style: "dash", // biên giới nét đứt
+      return new Graphic({
+        geometry: { type: "polygon", rings: data.rings },
+        symbol: {
+          type: "simple-fill",
+          color: data.color,
+          outline: {
+            type: "simple-line",
+            color: [255, 255, 255], // màu biên giới tỉnh
+            width: 1, // độ dày biên giới
+            style: "dash", // biên giới nét đứt
+          },
         },
-      },
-      attributes: data,
-      popupTemplate: {
-        title: "{title}",
-        content:
-          "<a>Diện tích: {area} km²<br>Dân số: {population} người <br>Mật độ: {population_density} người/km²<br>Biển số xe: {plate_number}</a>",
-      },
-    });
+        attributes: data,
+        popupTemplate: {
+          title: "{title}",
+          content:
+            "<a>Diện tích: {area} km²<br>Dân số: {population} người <br>Mật độ: {population_density} người/km²<br>Biển số xe: {plate_number}</a>",
+        },
+      });
+    } else {
+      return new Graphic({
+        geometry: { type: "polygon", rings: data.rings },
+        symbol: {
+          type: "simple-fill",
+          color: [120, 120, 120, 0.5],
+          outline: {
+            type: "simple-line",
+            color: [255, 255, 255],
+            width: 1,
+            style: "dash",
+          },
+        },
+      });
+    }
   };
 
   // vẽ cung đường đi
