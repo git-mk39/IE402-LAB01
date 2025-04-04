@@ -6,6 +6,7 @@ require([
   "esri/Graphic",
   "esri/layers/GraphicsLayer",
 ], function (esriConfig, Map, MapView, SceneView, Graphic, GraphicsLayer) {
+  // khởi tạo map
   const map = new Map({
     basemap: "dark-gray-vector",
   });
@@ -32,39 +33,10 @@ require([
     center: [108.6208828, 15.6862363],
   });
 
-  // xử lý event khi chuyển đổi 2D <-> 3D
-  document.getElementById("toggleBtn").addEventListener("click", function () {
-    if (mapView.container) {
-      // đổi sang 3D
-      mapView.container = null; // xóa view
-      sceneView.container = "viewDiv"; // gán view mới
-      sceneView.goTo(cameraPosition, { animate: false });
-      this.innerText = "Đổi sang 2D";
-    } else {
-      //đổi sang 2D
-      cameraPosition = sceneView.camera.clone();
-      sceneView.container = null;
-      mapView.container = "viewDiv";
-      this.innerText = "Đổi sang 3D";
-    }
-  });
-
-  // đổi basemap qua danh sách
-  window.changeBasemap = function (basemap) {
-    map.basemap = basemap;
-  };
-
-  // phân lớp đa giác
-  const polygonsLayer = new GraphicsLayer();
-  // phân lớp cung
-  const arcsLayer = new GraphicsLayer();
-  // phân lớp điểm
-  const pointsLayer = new GraphicsLayer();
-
   // vẽ đa giác tỉnh
-  const drawProvince = (data, byRegion) => {
+  const drawProvince = (data, currentRegion) => {
     let useColor;
-    if (data.region === byRegion || byRegion === "Cả nước") {
+    if (data.region === currentRegion || currentRegion === "Cả nước") {
       useColor = data.color;
     } else {
       useColor = [120, 120, 120, 0.5];
@@ -91,7 +63,7 @@ require([
   };
 
   // vẽ cung đường đi
-  const drawRoad = (data, useDataColors, byRegion) => {
+  const drawRoad = (data, useDataColors) => {
     return new Graphic({
       symbol: {
         type: "simple-line",
@@ -162,11 +134,15 @@ require([
     });
   };
 
-  // đặt khu vực mặc định
-  const defaultRegion = "Cả nước";
+  // tạo phân lớp đa giác
+  const polygonsLayer = new GraphicsLayer();
+  // tạo phân lớp cung
+  const arcsLayer = new GraphicsLayer();
+  // tạo phân lớp điểm
+  const pointsLayer = new GraphicsLayer();
 
   // lấy dữ liệu tọa độ các tỉnh từ ./polygon/provinces/index.json
-  function fetchProvinceData(byRegion) {
+  function fetchProvinceData(currentRegion) {
     fetch("polygon/provinces/index.json")
       .then((res) => res.json())
       .then((files) =>
@@ -177,21 +153,15 @@ require([
         )
       )
       .then((data) =>
-        data.forEach((obj) => polygonsLayer.add(drawProvince(obj, byRegion)))
+        data.forEach((obj) =>
+          // thêm tỉnh vào phân lớp đa giác
+          polygonsLayer.add(drawProvince(obj, currentRegion))
+        )
       );
   }
 
-  // fetch data tỉnh lần đầu
-  fetchProvinceData(defaultRegion);
-
-  // hàm đổi khu vực hiển thị các thông tin địa lý
-  window.changeDisplayRegion = function (byRegion) {
-    polygonsLayer.removeAll();
-    fetchProvinceData(byRegion);
-  };
-
   // lấy dữ liệu các đường đi từ ./polygon/roads/index.json
-  function fetchRoadData(useDataColors, byRegion) {
+  function fetchRoadData(useDataColors, currentRegion) {
     fetch("polygon/roads/index.json")
       .then((res) => res.json())
       .then((files) =>
@@ -202,7 +172,54 @@ require([
         )
       )
       .then((data) =>
-        data.forEach((obj) => arcsLayer.add(drawRoad(obj, useDataColors)))
+        data.forEach((obj) => {
+          if (obj.region === currentRegion || currentRegion === "Cả nước") {
+            // thêm đường bộ vào phân lớp cung
+            arcsLayer.add(drawRoad(obj, useDataColors));
+          }
+        })
+      );
+  }
+
+  // lấy dữ liệu các điểm cầu đường bộ từ ./point/bridges.json
+  function fetchBridgeData(currentRegion) {
+    fetch("point/bridges.json")
+      .then((res) => res.json())
+      .then((data) =>
+        data.forEach((obj) => {
+          if (obj.region === currentRegion || currentRegion === "Cả nước") {
+            // thêm cầu vào phân lớp điểm
+            pointsLayer.add(drawBridge(obj));
+          }
+        })
+      );
+  }
+
+  // lấy dữ liệu các điểm thành phố từ ./point/cities.json
+  function fetchCityData(currentRegion) {
+    fetch("point/cities.json")
+      .then((res) => res.json())
+      .then((data) =>
+        data.forEach((obj) => {
+          if (obj.region === currentRegion || currentRegion === "Cả nước") {
+            // thêm thành phố vào phân lớp điểm
+            pointsLayer.add(drawCity(obj));
+          }
+        })
+      );
+  }
+
+  // lấy dữ liệu các điểm thị trấn từ ./point/towns.json
+  function fetchTownData(currentRegion) {
+    fetch("point/towns.json")
+      .then((res) => res.json())
+      .then((data) =>
+        data.forEach((obj) => {
+          if (obj.region === currentRegion || currentRegion === "Cả nước") {
+            // thêm thị xã vào phân lớp điểm
+            pointsLayer.add(drawTown(obj));
+          }
+        })
       );
   }
 
@@ -210,32 +227,66 @@ require([
   // mặc định = true (có)
   let useRoadColor = true;
 
-  // fetch data đường bộ lần đầu
-  fetchRoadData(useRoadColor);
+  // khu vực hiện tại để hiển thị các thông tin địa lý (tỉnh, thành phố, cầu, đường)
+  // mặc định = "Cả nước"
+  let region = "Cả nước";
+
+  // fetch data lần đầu
+  fetchProvinceData(region);
+  fetchRoadData(useRoadColor, region);
+  fetchBridgeData(region);
+  fetchCityData(region);
+  fetchTownData(region);
+
+  // thêm các lớp vào map để hiển thị trên bản đồ
+  map.addMany([polygonsLayer, arcsLayer, pointsLayer]);
 
   // thực thi khi tick chọn hiển thị màu cho đường
   document
     .getElementById("toggleRoadColor")
     .addEventListener("change", function () {
       arcsLayer.removeAll(); // xóa graphics để vẽ lại
-      fetchRoadData(this.checked);
+      fetchRoadData(this.checked, region);
       useRoadColor = this.checked;
     });
 
-  // lấy dữ liệu các điểm cầu đường bộ từ ./point/bridges.json
-  fetch("point/bridges.json")
-    .then((res) => res.json())
-    .then((data) => data.forEach((obj) => pointsLayer.add(drawBridge(obj))));
+  // hàm đổi khu vực hiển thị các thông tin địa lý
+  window.changeDisplayRegion = function (currentRegion) {
+    // xóa các lớp để vẽ mới lại
+    polygonsLayer.removeAll();
+    arcsLayer.removeAll();
+    pointsLayer.removeAll();
 
-  // lấy dữ liệu các điểm thành phố từ ./point/cities.json
-  fetch("point/cities.json")
-    .then((res) => res.json())
-    .then((data) => data.forEach((obj) => pointsLayer.add(drawCity(obj))));
+    // thêm dữ liệu lại để vẽ mới
+    fetchProvinceData(currentRegion);
+    fetchRoadData(useRoadColor, currentRegion);
+    fetchBridgeData(currentRegion);
+    fetchCityData(currentRegion);
+    fetchTownData(currentRegion);
 
-  // lấy dữ liệu các điểm thị trấn từ ./point/cities.json
-  fetch("point/towns.json")
-    .then((res) => res.json())
-    .then((data) => data.forEach((obj) => pointsLayer.add(drawTown(obj))));
+    // ghi nhận lại region hiện tại
+    region = currentRegion;
+  };
 
-  map.addMany([polygonsLayer, arcsLayer, pointsLayer]);
+  // xử lý event khi chuyển đổi 2D <-> 3D
+  document.getElementById("toggleBtn").addEventListener("click", function () {
+    if (mapView.container) {
+      // đổi sang 3D
+      mapView.container = null; // xóa view
+      sceneView.container = "viewDiv"; // gán view mới
+      sceneView.goTo(cameraPosition, { animate: false });
+      this.innerText = "Đổi sang 2D";
+    } else {
+      //đổi sang 2D
+      cameraPosition = sceneView.camera.clone();
+      sceneView.container = null;
+      mapView.container = "viewDiv";
+      this.innerText = "Đổi sang 3D";
+    }
+  });
+
+  // đổi basemap qua danh sách
+  window.changeBasemap = function (basemap) {
+    map.basemap = basemap;
+  };
 });
