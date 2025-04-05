@@ -23,6 +23,7 @@ require([
     map: map,
     viewingMode: "global",
     camera: cameraPosition,
+    qualityProfile: "high",
   });
 
   // hiển thị view 2D
