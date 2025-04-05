@@ -155,5 +155,27 @@
     "latitude": 21.0283055,
     "region": "Đồng bằng sông Hồng",
     "population": "8.435.700"
+  },
+  {
+    "title": "Thành phố Hạ Long",
+    "longitude": 107.0442909,
+    "latitude": 20.9709927,
+    "region": "Đồng bằng sông Hồng",
+    "population": "322.710"
+  },
+  {
+    "title": "Thành phố Hải Dương",
+    "longitude": 106.3143819,
+    "latitude": 20.9369774,
+    "region": "Đồng bằng sông Hồng",
+    "population": "312.606"
+  },
+  {
+    "title": "Thành phố Hải Phòng",
+    "city_type": "Trực thuộc trung ương",
+    "longitude": 106.6880151,
+    "latitude": 20.8444937,
+    "region": "Đồng bằng sông Hồng",
+    "population": "2.310.280"
   }
 ]
