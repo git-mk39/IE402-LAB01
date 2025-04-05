@@ -177,5 +177,90 @@
     "latitude": 20.8444937,
     "region": "Đồng bằng sông Hồng",
     "population": "2.310.280"
+  },
+  {
+    "title": "Thành phố Hòa Bình",
+    "longitude": 105.3384569,
+    "latitude": 20.8274261,
+    "region": "Tây Bắc Bộ",
+    "population": "181.448"
+  },
+  {
+    "title": "Thành phố Hưng Yên",
+    "longitude": 106.057853,
+    "latitude": 20.6545555,
+    "region": "Đồng bằng sông Hồng",
+    "population": "118.646"
+  },
+  {
+    "title": "Thành phố Phủ Lý",
+    "longitude": 105.9173225,
+    "latitude": 20.5316818,
+    "region": "Đồng bằng sông Hồng",
+    "population": "169.589"
+  },
+  {
+    "title": "Thành phố Thái Bình",
+    "longitude": 106.3361593,
+    "latitude": 20.4458396,
+    "region": "Đồng bằng sông Hồng",
+    "population": "206.037"
+  },
+  {
+    "title": "Thành phố Nam Định",
+    "longitude": 106.1661374,
+    "latitude": 20.4223501,
+    "region": "Đồng bằng sông Hồng",
+    "population": "364.181"
+  },
+  {
+    "title": "Thành phố Hoa Lư",
+    "longitude": 105.9671246,
+    "latitude": 20.2502887,
+    "region": "Đồng bằng sông Hồng",
+    "population": "319.125"
+  },
+  {
+    "title": "Thành phố Thanh Hóa",
+    "longitude": 105.7845879,
+    "latitude": 19.8053632,
+    "region": "Bắc Trung Bộ",
+    "population": "615.106"
+  },
+  {
+    "title": "Thành phố Vinh",
+    "longitude": 105.6790357,
+    "latitude": 18.6813928,
+    "region": "Bắc Trung Bộ",
+    "population": "580.669"
+  },
+  {
+    "title": "Thành phố Hà Tĩnh",
+    "longitude": 105.8922718,
+    "latitude": 18.3457835,
+    "region": "Bắc Trung Bộ",
+    "population": "266.321"
+  },
+  {
+    "title": "Thành phố Đồng Hới",
+    "longitude": 106.5992316,
+    "latitude": 17.4645388,
+    "region": "Bắc Trung Bộ",
+    "population": "136.078"
+  },
+  {
+    "title": "Thành phố Đông Hà",
+    "longitude": 107.096616,
+    "latitude": 16.8132971,
+    "region": "Bắc Trung Bộ",
+    "population": "164.228"
+  },
+  {
+    "title": "Thành phố Huế",
+    "city_type": "Trực thuộc trung ương",
+    "longitude": 107.5775054,
+    "latitude": 16.4695341,
+    "region": "Bắc Trung Bộ",
+    "population": "1.236.393"
   }
 ]
