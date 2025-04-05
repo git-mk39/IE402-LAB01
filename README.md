@@ -3,6 +3,7 @@
 - Bài thực hành LAB01
 - Môn: IE402.P21 - Thông Tin Địa Lý 3 Chiều
 - Nhóm thực hiện: **`Nhóm 07`**
+- Link demo: https://git-mk39.github.io/IE402-LAB01/
 
 ## Cây thư mục
 
