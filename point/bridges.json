@@ -5,5 +5,68 @@
     "latitude": 10.5558663,
     "region": "Đồng bằng sông Cửu Long",
     "description": "Cầu Tân An là một cây cầu bắc qua sông Vàm Cỏ Tây nằm trên tuyến Quốc lộ 1 tại thành phố Tân An, tỉnh Long An, Việt Nam"
+  },
+  {
+    "title": "Cầu Nhật Tân",
+    "longitude": 105.8215237,
+    "latitude": 21.0935401,
+    "region": "Đồng bằng sông Hồng",
+    "description": "Cầu Nhật Tân là một cây cầu tại thủ đô Hà Nội, đây là cây cầu dây văng lớn nhất Việt Nam hiện tại được xây dựng với tổng mức đầu tư hơn 13.626 tỷ đồng nằm trong tổng số 7 cầu bắc qua sông Hồng đoạn Hà Nội nối quận Tây Hồ với huyện Đông Anh"
+  },
+  {
+    "title": "Cầu Pá Uôn",
+    "longitude": 103.6159433,
+    "latitude": 21.694604,
+    "region": "Tây Bắc Bộ",
+    "description": "Cầu Pá Uôn là một cây cầu bắc qua sông Đà tại xã Chiềng Ơn, huyện Quỳnh Nhai, tỉnh Sơn La, Việt Nam. Cầu Pá Uôn được xác lập kỷ lục có trụ cao nhất Việt Nam"
+  },
+  {
+    "title": "Cầu Phú Mỹ",
+    "longitude": 106.7442689,
+    "latitude": 10.7444217,
+    "region": "Đông Nam Bộ",
+    "description": "Cầu Phú Mỹ là cây cầu dây văng lớn nhất Thành phố Hồ Chí Minh bắc qua sông Sài Gòn nối Quận 7 và thành phố Thủ Đức, nằm trên tuyến đường vành đai 2 (Thành phố Hồ Chí Minh)"
+  },
+  {
+    "title": "Cầu Rồng",
+    "longitude": 108.2266416,
+    "latitude": 16.0605521,
+    "region": "Duyên hải Nam Trung Bộ",
+    "description": "Cầu Rồng là cây cầu thứ 6 và là cây cầu mới nhất bắc qua sông Hàn. Vì cây cầu có hình dáng giống một con rồng nên được gọi là Cầu Rồng"
+  },
+  {
+    "title": "Cầu Bãi Cháy",
+    "longitude": 107.0652541,
+    "latitude": 20.9601824,
+    "region": "Đông Bắc Bộ",
+    "description": "Cầu Bãi Cháy nằm trên quốc lộ 18, nối hai phần của thành phố Hạ Long là Hòn Gai và Bãi Cháy qua vịnh Cửa Lục nơi đổ ra vịnh Hạ Long, thuộc địa phận tỉnh Quảng Ninh. Đây là cây cầu có kết cấu dây văng một mặt phẳng đầu tiên của Việt Nam. Đồng thời, cầu Bãi Cháy cũng lập kỷ lục thế giới về chiều dài nhịp chính"
+  },
+  {
+    "title": "Cầu Thị Nại",
+    "longitude": 109.2392804,
+    "latitude": 13.811751,
+    "region": "Duyên hải Nam Trung Bộ",
+    "description": "Cầu Thị Nại hay Cầu Nhơn Hội nằm trong hệ thống cầu đường Nhơn Hội dài gần 7 km nối thành phố Quy Nhơn với bán đảo Phương Mai, Thị Nại là cầu vượt biển dài nhất Việt Nam nằm trong hệ thống cầu đường Nhơn Hội"
+  },
+  {
+    "title": "Cầu Mỹ Thuận",
+    "longitude": 105.9097004,
+    "latitude": 10.27812,
+    "region": "Đồng bằng sông Cửu Long",
+    "description": "Cầu Mỹ Thuận là cây cầu dây văng bắc qua sông Tiền, nối liền hai tỉnh Tiền Giang và Vĩnh Long, Việt Nam"
+  },
+  {
+    "title": "Cầu Sêrêpôk",
+    "longitude": 107.9291174,
+    "latitude": 12.6123535,
+    "region": "Tây Nguyên",
+    "description": "Cầu Sêrêpôk là một cây cầu bắc qua sông Srêpốk trên Quốc lộ 14, nối liền hai tỉnh Đắk Lắk và Đắk Nông thuộc vùng Tây Nguyên, Việt Nam"
+  },
+  {
+    "title": "Cầu Cửa Hội",
+    "longitude": 105.7454234,
+    "latitude": 18.7530027,
+    "region": "Bắc Trung Bộ",
+    "description": "Cầu Cửa Hội là một cây cầu bắc qua sông Lam, nối liền thành phố Vinh của tỉnh Nghệ An và huyện Nghi Xuân của tỉnh Hà Tĩnh"
   }
 ]
