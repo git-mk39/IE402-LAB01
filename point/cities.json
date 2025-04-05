@@ -49,5 +49,111 @@
     "latitude": 10.862073,
     "region": "Đông Nam Bộ",
     "population": "1.2 Triệu"
+  },
+  {
+    "title": "Thành phố Hà Giang",
+    "longitude": 104.9843347,
+    "latitude": 22.8235275,
+    "region": "Đông Bắc Bộ",
+    "population": "58.408"
+  },
+  {
+    "title": "Thành phố Cao Bằng",
+    "longitude": 106.2196395,
+    "latitude": 22.6771764,
+    "region": "Đông Bắc Bộ",
+    "population": "73.549"
+  },
+  {
+    "title": "Thành phố Lào Cai",
+    "longitude": 103.9938291,
+    "latitude": 22.4542475,
+    "region": "Tây Bắc Bộ",
+    "population": "130.671"
+  },
+  {
+    "title": "Thành phố Sơn La",
+    "longitude": 103.9112321,
+    "latitude": 21.3206094,
+    "region": "Tây Bắc Bộ",
+    "population": "106.052" 
+  },
+  {
+    "title": "Thành phố Lai Châu",
+    "longitude": 103.4402548,
+    "latitude": 22.3987614,
+    "region": "Tây Bắc Bộ",
+    "population": "42.973"
+  },
+  {
+    "title": "Thành phố Bắc Kạn",
+    "longitude": 105.833936,
+    "latitude": 22.1485938,
+    "region": "Đông Bắc Bộ",
+    "population": "45.036"
+  },
+  {
+    "title": "Thành phố Lạng Sơn",
+    "longitude": 106.7613745,
+    "latitude": 21.853667,
+    "region": "Đông Bắc Bộ",
+    "population": "106.879"
+  },
+  {
+    "title": "Thành phố Tuyên Quang",
+    "longitude": 105.2036836,
+    "latitude": 21.8248951,
+    "region": "Đông Bắc Bộ",
+    "population": "147.584"
+  },
+  {
+    "title": "Thành phố Thái Nguyên",
+    "longitude": 105.8273508,
+    "latitude": 21.580186,
+    "region": "Đông Bắc Bộ",
+    "population": "363.698"
+  },
+  {
+    "title": "Thành phố Điện Biên Phủ",
+    "longitude": 103.0150661,
+    "latitude": 21.3902332,
+    "region": "Tây Bắc Bộ",
+    "population": "84.672"
+  },
+  {
+    "title": "Thành phố Việt Trì",
+    "longitude": 105.3943771,
+    "latitude": 21.325154,
+    "region": "Đông Bắc Bộ",
+    "population": "219.111"
+  },
+  {
+    "title": "Thành phố Vĩnh Yên",
+    "longitude": 105.6009075,
+    "latitude": 21.309827,
+    "region": "Đồng bằng sông Hồng",
+    "population": "124.455"
+  },
+  {
+    "title": "Thành phố Bắc Giang",
+    "longitude": 106.2019775,
+    "latitude": 21.2829277,
+    "region": "Đông Bắc Bộ",
+    "population": "187.854"
+  },
+  {
+    "title": "Thành phố Bắc Ninh",
+    "longitude": 106.0627779,
+    "latitude": 21.1756926,
+    "region": "Đồng bằng sông Hồng",
+    "population": "288.766"
+  },
+  {
+    "title": "Thành phố Hà Nội",
+    "city_type": "Thủ đô",
+    "longitude": 105.835434,
+    "latitude": 21.0283055,
+    "region": "Đồng bằng sông Hồng",
+    "population": "8.435.700"
   }
 ]

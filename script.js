@@ -89,15 +89,23 @@ require([
   // vẽ điểm thành phố
   const drawCity = (data) => {
     let img_url = "images/city.png";
+    let img_width = "8px";
+    let img_height = "8px";
     if (data.city_type === "Trực thuộc trung ương") {
       img_url = "images/major_city.png";
+      img_width = "10px";
+      img_height = "10px";
+    } else if (data.city_type === "Thủ đô") {
+      img_url = "images/capital.png";
+      img_width = "18px";
+      img_height = "18px";
     }
     return new Graphic({
       symbol: {
         type: "picture-marker",
         url: img_url,
-        width: "12px",
-        height: "12px",
+        width: img_width,
+        height: img_height,
       },
       geometry: { type: "point", ...data },
       attributes: data,
@@ -114,8 +122,8 @@ require([
       symbol: {
         type: "picture-marker",
         url: "images/town.png",
-        width: "10px",
-        height: "10px",
+        width: "6px",
+        height: "6px",
       },
       geometry: { type: "point", ...data },
       attributes: data,
