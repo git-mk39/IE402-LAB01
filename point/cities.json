@@ -262,5 +262,118 @@
     "latitude": 16.4695341,
     "region": "Bắc Trung Bộ",
     "population": "1.236.393"
+  },
+  {
+    "title": "Thành phố Đà Nẵng",
+    "city_type": "Trực thuộc trung ương",
+    "longitude": 108.2066019,
+    "latitude": 16.0495724,
+    "region": "Duyên hải Nam Trung Bộ",
+    "population": "1.233.400"
+  },
+  {
+    "title": "Thành phố Tam Kỳ",
+    "longitude": 108.4821578,
+    "latitude": 15.5637108,
+    "region": "Duyên hải Nam Trung Bộ",
+    "population": "122.374"
+  },
+  {
+    "title": "Thành phố Quảng Ngãi",
+    "longitude": 108.8051883,
+    "latitude": 15.1214619,
+    "region": "Duyên hải Nam Trung Bộ",
+    "population": "278.496"
+  },
+  {
+    "title": "Thành phố Kon Tum",
+    "longitude": 108.0042341,
+    "latitude": 14.3561411,
+    "region": "Tây Nguyên",
+    "population": "205.762"
+  },
+  {
+    "title": "Thành phố Pleiku",
+    "longitude": 108.0142016,
+    "latitude": 13.9724694,
+    "region": "Tây Nguyên",
+    "population": "331.178"
+  },
+  {
+    "title": "Thành phố Quy Nhơn",
+    "longitude": 109.2196164,
+    "latitude": 13.7815731,
+    "region": "Duyên hải Nam Trung Bộ",
+    "population": "481.110"
+  },
+  {
+    "title": "Thành phố Tuy Hòa",
+    "longitude": 109.2953042,
+    "latitude": 13.1051829,
+    "region": "Duyên hải Nam Trung Bộ",
+    "population": "155.921"
+  },
+  {
+    "title": "Thành phố Buôn Ma Thuột",
+    "longitude": 108.0435191,
+    "latitude": 12.6802047,
+    "region": "Tây Nguyên",
+    "population": "434.256"
+  },
+  {
+    "title": "Thành phố Nha Trang",
+    "longitude": 109.1895422,
+    "latitude": 12.2524274,
+    "region": "Duyên hải Nam Trung Bộ",
+    "population": "422.601"
+  },
+  {
+    "title": "Thành phố Gia Nghĩa",
+    "longitude": 107.6829905,
+    "latitude": 12.0045306,
+    "region": "Tây Nguyên",
+    "population": "68.215"
+  },
+  {
+    "title": "Thành phố Đà Lạt",
+    "longitude": 108.4561324,
+    "latitude": 11.9440474,
+    "region": "Tây Nguyên",
+    "population": "258.014"
+  },
+  {
+    "title": "Thành phố Phan Rang – Tháp Chàm",
+    "longitude": 108.9908124,
+    "latitude": 11.5818142,
+    "region": "Duyên hải Nam Trung Bộ",
+    "population": "207.998"
+  },
+  {
+    "title": "Thành phố Đồng Xoài",
+    "longitude": 106.8900786,
+    "latitude": 11.5336106,
+    "region": "Đông Bắc Bộ",
+    "population": "150.052"
+  },
+  {
+    "title": "Thành phố Tây Ninh",
+    "longitude": 106.1097524,
+    "latitude": 11.3341093,
+    "region": "Đông Nam Bộ",
+    "population": "269.320"
+  },
+  {
+    "title": "Thành phố Thủ Dầu Một",
+    "longitude": 106.655694,
+    "latitude": 10.992724,
+    "region": "Đông Nam Bộ",
+    "population": "336.705"
+  },
+  {
+    "title": "Thành phố Biên Hòa",
+    "longitude": 106.8420111,
+    "latitude": 10.957741,
+    "region": "Đông Nam Bộ",
+    "population": "1.272.235"
   }
 ]
